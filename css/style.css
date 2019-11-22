@@ -6,6 +6,30 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 h2 h3 h4 h5 h6{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1{
+    font-weight: 300;
+}
+
+h2{
+    text-align: center;
+    font-size: 60px;
+}
+
+h3{
+    padding: 15px 20px 0 20px;
+    margin: 0;
+    margin-block-end: 0;
+    text-transform: uppercase;
+    font-size: 28px;
+
 }
 
 /*Header*/
@@ -20,7 +44,6 @@ body{
 
 .headerbox{
     display: flex;
-    font-family: 'Lato', sans-serif;
 }
 
 .headerbox h1{
@@ -28,6 +51,7 @@ body{
     text-transform: uppercase;
     color: white;
     margin-bottom: 0;
+    margin-left: 15px;
 }
 
 .navn{
@@ -45,7 +69,7 @@ nav{
 
 nav ul{
     margin: 0;
-    padding: 0;
+    padding: 5px;
     font-size: 25px;
     list-style-type: none;
     display: flex;
@@ -69,16 +93,11 @@ nav a:hover{
 }
 
 /*Body*/
-.News_overskrift{
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-}
-
+/*News del*/
 .News{
+    margin: 0 45px;
     display: flex;
     font-size: 25px;
-    font-family: 'Nunito Sans', sans-serif;
 }
 
 .News1{
@@ -88,7 +107,7 @@ nav a:hover{
 .News2{
     margin: 0 40px 60px 40px;
 }
-
+/*salger del*/
 .salg{
     display: flex;
     justify-content: center;
@@ -98,23 +117,28 @@ nav a:hover{
 
 .salg img{
     justify-content: center;
-    height: 350px;
-    width: 500px;
+    height: 400px;
+    width: 550px;
 }
 
 .salg_box{
-    margin: 80px 50px;
+    margin: 80px 40px;
     background-color: white;
 }
 
-.salg_box h3{
-    padding: 10px;
+.salg_box-2{
+    margin: 85px 0;
+    background-color: white;
 }
 
 .salg_box p{
-    padding: 10px;
+    padding: 0 20px;
 }
 
+.salg_box-pris{
+    margin-top: 30px;
+}
+/*Udvalgs del*/
 .img_se{
     background-image: url(/img/5642_Hejrelunden_20.jpg);
     background-repeat: no-repeat;
@@ -129,7 +153,7 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(70% - 35px);
+    height: calc(80% - 35px);
 }
 
 .text_in_img a{
@@ -159,7 +183,7 @@ footer{
     display: flex;
     justify-content: flex-end;
     color: gray;
-    padding: 50px;
+    padding: 0 50px;
     font-size: 50px;
 }
 
@@ -171,7 +195,9 @@ footer{
     display: flex;
     justify-content: space-between;
     color: gray;
-    padding: 130px;
+    height: 400px;
+    padding: 30px 300px;
+    padding-left: 0;
     font-size: 25px;
 }
 
@@ -181,14 +207,7 @@ footer{
 
 .foot_box1{
     margin: 30px;
-}
-
-.foot_box2{
-    margin: 30px;
-}
-
-.foot_box3{
-    margin: 30px;
+    padding-right: 100px;
 }
 
 .mail{
@@ -198,13 +217,14 @@ footer{
 .pil::before{
     content: '';
     display: block;
-    height: 30px;
-    width: 30px;
+    height: 10px;
+    width: 10px;
     border: 20px;
     border-color: black;
     border-style: solid;
     position: relative;
-    top: -35px;
+    top: -25px;
     left: calc(50% - 35px);
-    transform: rotate(45deg);
+    transform: rotate(135deg);
+    clip-path: polygon(-9px -10px, -9.28% 110.72%, 107.86% 107.86%);
 }
